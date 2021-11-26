@@ -8,7 +8,8 @@
     --header-height: 120px;
     --navbar-height: 34px;
     --primary-color-hover: #fb6445;
-    --header-with-search-height: calc(var(var(--header-height) - var(var(--navbar-height))));
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 * {
@@ -24,16 +25,6 @@ html {
 
 
 /* Responsive */
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
 
 .grid__row {
     display: flex;
@@ -247,8 +238,6 @@ html {
     height: var(--height);
     border-radius: 2px;
 }
-
-.pagination-item__icon {}
 
 .pagination-item--active .pagination-item__link {
     background-color: var(--primary-color);
